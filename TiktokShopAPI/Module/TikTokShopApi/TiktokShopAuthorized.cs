@@ -12,7 +12,7 @@ public class TiktokShopAuthorized(string appKey, string appSecret, string access
 {
     private readonly string _domain = isProduction ? "https://open-api.tiktokglobalshop.com" : "https://open-api-sandbox.tiktokglobalshop.com";
 
-    #region AccessToken - Dùng Để Bước Đầu Lấy Được AccessToken
+    #region AccessToken - Use For Get AccessToken And RefreshAccessToken
 
     public async Task<string> RefreshAccessToken(string refreshToken)
     {
