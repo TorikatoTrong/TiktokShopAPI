@@ -22,14 +22,10 @@ internal class Program
         
         var tiktokShopAuthorized = new TiktokShopAuthorized(appKey, appSecret, accessToken, shopCipher);
         var tiktokShopApi = new TiktokShopApi(tiktokShopAuthorized);
-
-        //var shop = await tiktokShopApi.GetAuthorizedShops();
-        //Console.WriteLine(shop);
-
+        
         var jsonString = await tiktokShopApi.GetAuthorizedShops();
         SaveJsonToFile(JObject.Parse(jsonString), "AuthorizedShops");
-
-
+        
         Console.ReadKey();
     }
     public static void SaveJsonToFile(JObject jsonData, string filename = "TiktokData")
