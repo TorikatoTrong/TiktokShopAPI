@@ -48,8 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module\TikTokShopApi\TiktokShopAPI.cs" />
-    <Compile Include="Module\TikTokShopApi\TiktokShopAuthorized.cs" />
+    <Compile Include="Module\TikTokShopApi\ProductApi.cs" />
+    <Compile Include="Module\TikTokShopApi\PromotionApi.cs" />
+    <Compile Include="Module\TikTokShopApi\Services\TiktokClient.cs" />
+    <Compile Include="Module\TikTokShopApi\Services\TiktokShopAPI.cs" />
+    <Compile Include="Module\TikTokShopApi\TiktokAuth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
